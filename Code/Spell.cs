@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class Spell : ScriptableObject
 {
     public string spellNameLabel;
-    public float spellDuration;
+    public int spellDurationInSeconds;
     public long spellValue;
     public long spellCost;
     public long spellCostMultiplier;
     [SerializeField] public Sprite newSpellGem;
+
+    public bool inProgress;
 
 }
